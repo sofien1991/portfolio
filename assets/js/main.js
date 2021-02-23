@@ -6,7 +6,7 @@
 		$body = $('body'),
 		settings = {
 
-			// Parallax background effect?
+			
 				parallax: true,
 
 			// Parallax factor (lower = more intense, higher = less intense).
@@ -94,6 +94,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic29maWVuOTEiLCJhIjoiY2trc3hxbDViMTdxbTJucW5sb
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-center: [-74.5, 40], // starting position [lng, lat]
+center: [8.267390, 49.995098], // starting position [lng, lat]
 zoom: 9 // starting zoom
 });
+var marker = new mapboxgl.Marker()
+.setLngLat([8.267390, 49.995098])
+.addTo(map);
